@@ -1,0 +1,28 @@
+/** 
+**
+** MEDIA QUERY
+**
+**/
+
+$desktop: 1024px;
+$tablets:720px;
+$phone: 480px;
+
+
+@mixin desktop{
+    @media screen and (max-width: $desktop) {
+        @content;
+    }
+}
+
+@mixin tablets{
+    @media screen and (max-width: $tablets){
+        @content;
+    }
+}
+
+@mixin phone{
+    @media screen and (max-width: $phone) {
+        @content;
+    }
+}

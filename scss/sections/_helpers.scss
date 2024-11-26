@@ -1,0 +1,30 @@
+/*
+HELPERS
+*/
+
+// MARGEN
+
+@for $i from 0 through 5{
+    .m-#{$i}{margin:$i * 10px;}
+    .mx-#{$i}{margin:0 $i * 10px;}
+    .my-#{$i}{margin:$i * 10px 0;}
+    .mt-#{$i}{margin-top:$i * 10px;}
+    .mb-#{$i}{margin-bottom: $i * 10px;}
+    .mr-#{$i}{margin-right: $i * 10px;}
+    .ml-#{$i}{margin-left: $i * 10px;}
+}
+
+.mx-auto{margin: 0 auto;}
+.my-auto{margin: auto 0;}
+
+
+// PADDING
+@for $i from 0 through 5{
+    .p-#{$i}{padding:$i * 10px;}
+    .px-#{$i}{padding:0 $i * 10px;}
+    .py-#{$i}{padding:$i * 10px 0;}
+    .pt-#{$i}{padding-top:$i * 10px;}
+    .pb-#{$i}{padding-bottom: $i * 10px;}
+    .pr-#{$i}{padding-right: $i * 10px;}
+    .pl-#{$i}{padding-left: $i * 10px;}
+}
